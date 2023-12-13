@@ -89,6 +89,14 @@ Ein Deep Fake erkennt man einer unnatürlichen Mimik, oder einem leeren Blick ab
   <button onclick="falscheAntwortSocialBots()">Social Media Netzwerke für Bots</button>
   <button onclick="richtigeAntwortSocialBots()">Bots, die sich auf Social Media als Menschen ausgeben</button>
   <p id="outputSocialBots"></p>
+  <br>
+  <p>Wie viel Prozent der Jugendlichen (von 12-19) sind schonmal in Kontakt mit Fake News gekommen?</p>
+  <button onclick="falscheAntwortFakeJugendlich()">unter 30%</button>
+  <button onclick="falscheAntwortFakeJugendlich()">ungefär 60%</button>
+  <button onclick="richtigeAntwortFakeJugendlich()">über 80%</button>
+  <p id="outputFakeJugendliche"></p>
+  <br>
+  <br>
     <h4> Bildquellen: https://www.nme.com/wp-content/uploads/2023/08/Twitter-rebrand-to-X.jpg, https://th.bing.com/th/id/R.19c0530bd8a4b6298469b0c6aa49d5af?rik=ANWVBzMUSr9%2bOA&pid=ImgRaw&r=0, https://rp-online.de/imgs/32/4/1/8/5/9/0/2/7/tok_e59be50f18ede1888eed0c66bbbbbaf0/w1900_h1266_x1500_y1000_DPA_bfunk_dpa_5F9AD0007E17C240-9c6465f0d372a6b2.jpg, https://s.yimg.com/uu/api/res/1.2/7r0tA4gsUkZy6K_WTc94GQ--~B/aD05NTE7dz0xMjY3O3NtPTE7YXBwaWQ9eXRhY2h5b24-/http://media.zenfs.com/en-US/homerun/businessinsider.com/223e40efbbac2f8db5ab6101d63ba9fc</h4>
     
 
@@ -96,11 +104,18 @@ Ein Deep Fake erkennt man einer unnatürlichen Mimik, oder einem leeren Blick ab
     
   <script>
     const el1 = document.getElementById("outputSocialBots");
+    const el2 = document.getElementById("outputFakeJugendliche");
     function falscheAntwortSocialBots() {
 el1.innerHTML = "Falsch!"
     }
     function richtigeAntwortSocialBots() {
       el1.innerHTML = "Richtig!"
+    }
+    function falscheAntwortFakeJugendlich() {
+el2.innerHTML = "Falsch!"
+    }
+    function richtigeAntwortFakeJugendlich() {
+      el2.innerHTML = "Richtig!"
     }
   </script>
 
