@@ -106,16 +106,20 @@ Ein Deep Fake erkennt man einer unnatürlichen Mimik, oder einem leeren Blick ab
     const el1 = document.getElementById("outputSocialBots");
     const el2 = document.getElementById("outputFakeJugendliche");
     function falscheAntwortSocialBots() {
-el1.innerHTML = "Falsch!"
+el1.innerHTML = "Falsch!";
+      el1.style.color = "red"
     }
     function richtigeAntwortSocialBots() {
-      el1.innerHTML = "Richtig!"
+      el1.innerHTML = "Richtig!";
+      el1.style.color = "green"
     }
     function falscheAntwortFakeJugendlich() {
-el2.innerHTML = "Falsch!"
+el2.innerHTML = "Falsch!";
+      el2.style.color = "red"
     }
     function richtigeAntwortFakeJugendlich() {
-      el2.innerHTML = "Richtig!"
+      el2.innerHTML = "Richtig!";
+      el2.style.color = "green"
     }
   </script>
 
